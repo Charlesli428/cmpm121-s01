@@ -1,4 +1,4 @@
-/**
+/*
  * Main entry point for the CMPM 121 Section Activity
  * Simple starter template - customize to your heart's content!
  */
@@ -21,6 +21,7 @@ const button = document.getElementById("increment")!;
 const counterElement = document.getElementById("counter")!;
 
 button.addEventListener("click", () => {
-  // This looks like to a good place to add some logic!
+  counter++;
+  counterElement.textContent = counter.toString();
   console.log("I have these thingies:", button, counterElement, counter);
 });
